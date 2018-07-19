@@ -1,0 +1,29 @@
+<!-- item -->
+<div class="col-sm-5 col-md-3 prod-item">
+	<div class="thumbnail">
+		<div class='prod-img-container'>
+			<% if (product.img != '') { %>
+			<img src="<%= product.img %>" alt='image not available' class="img-rounded img-responsive prod-img"/>
+			<% } else { %>
+			<img data-src="holder.js/100%x180" alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUzOWY0MDNlMzggdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTM5ZjQwM2UzOCI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI1OS4yMTg3NSIgeT0iOTQuNTMyODEyNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+			<% } %>
+		</div>
+		<div class="caption prod-caption">
+			<h3 class='prod-title'><%= product.name %></h3>
+			<p class='prod-desc block-with-text'><%= product.description %></p>
+			<p>
+				Price: ₹ <%= product.unitPrice %> only
+			</p>
+			<p>
+				Only <%= product.unitsAvailable %> more left
+			</p>
+			<p>
+				Sold by : <%= product.soldByVendor %>
+			</p>
+			<p>
+				<!-- <a href="#" class="btn btn-primary" role="button">Button</a> --> 
+				<a href="#" class="btn btn-default" role="button">Preview</a>
+			</p>
+		</div> <!-- end of caption -->
+	</div> <!-- end of thumbnail -->
+</div> <!-- End of one item

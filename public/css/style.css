@@ -1,0 +1,309 @@
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), 
+	local('OpenSans'), 
+	url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+body {
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+	font-size: auto;
+	padding-top: 70px; /* to ensure the fixed nav bar does not overlap the page content */
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure {
+	display: block;
+}
+
+.page-content {
+    max-width: 1366px;
+    margin: auto;
+}
+
+h1.error-message{
+    color: red;
+}
+
+
+.hnb {
+	padding: 8px;
+    /* background-color: #4285F4;
+    border-color: #5D8FE2; */	
+}
+.content {
+	margin: 0px 10px 0px 10px;
+}
+
+.ftr {
+  position: fixed;
+	background-color: #525354;	
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.login-title{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.account-wall{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.signup-wall{
+	margin-top: 20px;
+    padding: 20px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);	
+}
+.form-signin{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox{
+    font-weight: normal;
+}
+.form-control{
+    position: relative;
+    margin-bottom: 2px;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus{
+    z-index: 2;
+}
+.form-signin input[type="text"]{
+    margin-bottom: 2px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-signin input[type="password"].nomargin{
+	margin-bottom: 2px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.new-account{
+    display: block;
+    margin-top: 10px;
+}
+ul.user-details{
+    list-style: none;
+}
+.btn-block {
+    margin-top: 30px;
+}
+.catalog {
+    margin: 10px 0px 10px 0px;
+}
+
+.form-product{
+    max-width: 450px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.vdr-account-wall
+{
+    background-color: #CEC7D2;
+}
+.btn-vendor-signin {
+    color: #fff;
+    background-color: #6C49B1;
+    border-color: #8064B5;
+}
+
+.btn-vendor-signin:active {
+    color: #fff;
+    background-color: #5618D2;
+    border-color: #8064B5;
+}
+
+.btn-vendor-signin:focus {
+    color: #fff;
+    background-color: #5618D2;
+    border-color: #8064B5;
+}
+
+.btn-vendor-signin:hover {
+    color: #fff;
+    background-color: #6C49B1;
+    border-color: #8064B5;
+}
+
+.input-group {
+    margin-bottom: 2px;   
+}
+
+.ellipsis{
+ white-space:nowrap;
+ overflow:hidden;
+}
+
+.ellipsis:after{
+  content:'...';
+}
+
+.prod-item {
+
+
+}
+
+.prod-caption {
+
+}
+
+.prod-img-container {  
+    overflow: hidden;
+    vertical-align:middle;
+}
+.prod-img {
+    height: 18em;
+    width: auto;
+    margin: auto;
+}
+
+.prod-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.prod-desc {
+
+}
+
+
+/* styles for '...' */ 
+/* refer http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/ */
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  /* margin-right: -1em; */
+  padding-right: 1em;
+}
+/* create the ... */
+.block-with-text:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.block-with-text:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+
+@-webkit-keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    16% {
+        opacity: 1;
+    }
+    84% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    16% {
+        opacity: 1;
+    }
+    84% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes 'horizontal-slide' {
+    from {
+      left: 0;
+    }
+    
+    to {
+      left: 100px;
+    }
+}
+
+.new {
+  background-color: #5CC15C;
+  opacity: 0;  
+  -webkit-animation: fadeInOut 7s;
+  animation: fadeInOut 7s;
+  animation-iteration-count: 10;
+  margin: 10px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.prd-pagination {
+  margin: 5px 15px 0px auto;
+}
